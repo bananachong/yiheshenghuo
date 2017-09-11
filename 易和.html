@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .heard{
+            overflow: hidden;
+            padding: 0 400px;
+            position: relative;
+        }
+        .center{
+            width: 100%;
+            background: white;
+            height: 150px;
+            float: left;
+
+
+        }
+
+        .left{
+            position: relative;
+            left: -400px;
+            width: 400px;
+            height: 150px;
+            float: left;
+            background: white;
+            margin-left: -100%;
+
+        }
+        .right{
+            position: relative;
+            right: -400px;
+            width:400px;
+            height: 150px;
+            float: left;
+            background: white;
+            margin-left: -400px;
+        }
+        .tou{
+            width: 100%;
+            height: 30px;
+            background: gainsboro;
+            float: left;
+
+        }
+        .imte1{
+            position: absolute;
+            left: 15%;
+        }
+        .img1{
+            position: absolute;
+            left: 18%;
+
+            font-size: 10px;
+        }
+        .imte2{
+            font-size: 10px;
+            position: absolute;
+            right: 20%;
+            padding-top: 5px;
+        }
+        .img2-1{
+            position: absolute;
+            bottom: 50px;
+            right: 30%;
+        }
+        .center-1{
+        position: absolute;
+            right: 45%;
+            bottom: 40%;
+        }
+        .center-2{
+            position: absolute;
+            right: 68.3%;
+            bottom: 59.5%;
+            background: blue;
+
+            font-size: 14px;
+        }
+        .center-3{
+            position: absolute;
+            right: 66%;
+            bottom: 59.5%;
+            font-size: 14px;
+        }
+        .center a{
+            text-decoration: none;
+        }
+        .center-4{
+            width: 25px;
+            height: 27px;
+            background: blue;
+            position: absolute;
+            right: 45%;
+            bottom: 41%;
+
+        }
+        .center-5{
+            font-size: 12px;
+            position: absolute;
+            right: 65.5%;
+            bottom: 27%;
+            font-weight: bold;
+        }
+        .center-6{
+            font-size: 12px;
+            position: absolute;
+            bottom: 27%;
+            right: 63%;
+        }
+        .center-7{
+            font-size: 12px;
+            position: absolute;
+            bottom: 27%;
+            right: 60.5%;
+        }
+        .center-8{
+            font-size: 12px;
+            position: absolute;
+            bottom: 27%;
+            bottom: 27%;
+            right: 58%;
+        }
+        .center-9{
+            font-size: 12px;
+            position: absolute;
+            bottom: 27%;
+            right: 56%;
+        }
+        .center-10{
+            font-size: 12px;
+            position: absolute;
+            bottom: 27%;
+            right: 54%;
+        }
+        .center-11{
+            font-size: 12px;
+            position: absolute;
+            bottom: 27%;
+            right: 52%;
+        }
+        .center-12{
+            width: 100px;
+            height: 25px;
+            background: gainsboro;
+            position: absolute;
+            right: 37%;
+            bottom: 43%;
+
+        }
+        .center-12-1{
+              position: absolute;
+              top: 3px;
+              right: 15px;
+              font-size: 14px;
+          }
+        .center-13{
+            width: 80px;
+            height: 25px;
+            background: gainsboro;
+            position: absolute;
+            right: 30%;
+            bottom: 43%;
+
+        }
+        .center-13-1{
+            position: absolute;
+            top: 3px;
+            right: 15px;
+            font-size: 14px;
+        }
+        .hang{
+            width: 100%;
+            height: 80px;
+            background: white;
+            float: left;
+            position: relative;
+
+        }
+        .hang-1{
+            width: 200px;
+            height: 50px;
+            background: deepskyblue;
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+            float: left;
+
+        }
+        .hang-1 a{
+            position: relative;
+            top: 15px;
+            left: 60px;
+            color: white;
+        }
+
+        .hang a{
+            text-decoration: none;
+        }
+        .hang-2{
+            float: left;
+            margin-right: 90px;
+            position: relative;
+            left: 500px;
+            top: 50px;
+        }
+
+        .dang{
+            width:100%;
+            height: 210px;
+            float: left;
+            background: snow;
+
+        }
+        .png{
+            float: left;
+            margin-right: 10px;
+            position: relative ;
+            left: 15%;
+        }
+        .jing{
+            width: 100%;
+            height: 80px;
+            background: snow;
+            float: left;
+            position: relative;
+        }
+        .jing-1{
+            float: left;
+            color: #FF6537;
+            position: absolute;
+            left: 250px;
+        }
+        .jing-2{
+            float: left;
+            color: deepskyblue;
+            position: absolute;
+            left: 312px;
+
+        }
+        .jing-3{
+            float: left;
+            margin-right: 10px;
+            position: absolute;
+            left: 390px;
+            bottom: 20px;
+
+
+        }
+        .jing-4{
+            float: left;
+            position: absolute;
+            left: 450px;
+            bottom: 20px;
+        }
+        .outer{
+            width:1630px;
+            height: 470px;
+            overflow: hidden;
+            position: relative;
+
+        }
+        .imge{
+            width: 1630px;
+            height: 470px;
+            position: absolute;
+
+        }
+
+
+        .contain{
+            position: relative;
+            height: 470px;
+
+        }
+        .lefts,.rights{
+            color: white;
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            top:50%;
+            background: rgba(0,0,0,0.6);
+            display: none;
+        }
+        .lefts{
+
+            left:0;
+
+        }
+        .rights{
+
+            right:0;
+
+        }
+        .outer:hover .lefts,.outer:hover .rights{
+            display: block;
+
+        }
+        .lists{
+            border-radius: 9.5px;
+            width: 55px;
+            height: 15px;
+            background: rgba(127,127,127,0.7);
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            margin-left: -30px;
+            padding: 2px;
+        }
+        .list{
+            width: 15px;
+            height: 15px;
+            background: #B7B7B7;
+            border-radius: 50%;
+            float: left;
+        }
+        .jingxuan{
+            width: 100%;
+            height: 350px;
+            background: snow;
+            float: left;
+            position: relative;
+
+        }
+        .jingxuan-1{
+            width: 1250px;
+            height: 300px;
+            background: white;
+            position: absolute;
+            left: 240px;
+            bottom: 30px;
+            float: left;
+            border-top: 3px solid deepskyblue;
+        }
+        .jingxuan-1-1{
+            float: left;
+            width: 350px;
+            height: 300px;
+            background: yellow;
+        }
+        .jingxuan-2{
+            float: left;
+            width: 900px;
+            height: 300px;
+            background: white;
+        }
+        .item{
+            float: left;
+            border: 0.5px solid black;
+        }
+
+        .qiche{
+            width: 100%;
+            height: 70px;
+            background: snow;
+            float: left;
+            position: relative;
+
+        }
+        .qiche-1{
+            float: left;
+            position: absolute;
+            right: 84%;
+            bottom: 20%;
+
+        }
+        .qiche-2{
+            float: left;
+            position: absolute;
+            right: 78%;
+            bottom: 25%;
+            font-size: 20px;
+
+        }
+        .qiche-2 a{
+         text-decoration: none;
+        }
+        .qiche-3{
+            float: left;
+            margin-right: 10px;
+
+        }
+        .qiche-3 div{
+            float: left;
+            margin-right: 60px;
+            position: relative;
+            left: 600px;
+            top: 30px;;
+        }
+        .qiche-3 a{
+            text-decoration: none;
+        }
+
+        .che{
+            width: 100%;
+            height: 540px;
+            background: snow;
+            float: left;
+            position: relative;
+        }
+         .che-1{
+             height: 520px;
+             width: 1250px;
+             float: left;
+
+             position: absolute;
+             left: 240px;
+             bottom: 9px;
+             border-top: 3px solid deepskyblue;
+         }
+        .che-1-1{
+            height: 520px;
+            width: 320px;
+
+            float: left;
+        }
+        .che-1-2{
+            height: 252px;
+            width: 305px;
+            background: white;
+            float: left;
+            border: 1px solid gainsboro;
+            margin-right: 2px;
+            margin-bottom: 6px;
+        }
+        .lianxi{
+            margin-top: 12px;
+            margin-left: 40px;
+            font-size: 15px;
+        }
+        .lianxi-1{
+            position: relative;
+            bottom: 40px;
+            left: 20px;
+        }
+        .lianxi-2{
+            position: relative;
+            bottom: 88px;
+            left: 20px;
+        }
+        .lianxi-3{
+            position: relative;
+            bottom: 65px;
+            left: 20px;
+        }
+        .zi{
+            background: black;
+            width: 304px;
+            height: 30px;
+            color: white;
+            text-align: center;
+            opacity: 0.3;
+            position: relative;
+            bottom: 36px;
+        }
+        .zheng{
+            width: 100%;
+            height: 100px;
+            background: gainsboro;
+            float: left;
+            position: relative;
+
+        }
+        .im{
+            float: left;
+            margin-right: 150px;
+            position: relative;
+            left: 230px;
+            top: 30px;
+        }
+        .im span{
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .bottom{
+            width: 100%;
+            height: 250px;
+            background: white;
+            float: left;
+            position: relative;
+        }
+        .bot{
+            float: left;
+            position: absolute;
+            left: 230px;
+            top: 20px;
+        }
+        .bottom1{
+            float: left;
+            margin-right: 70px;
+        }
+        .bottom1:hover{
+            font-size: 20px;
+        }
+        .bot2{
+            float: left;
+            margin-right: 10px;
+            position: relative;
+            left: 750px;
+            top: 200px;
+        }
+        .bot2 a{
+            text-decoration: none;
+        }
+        .count a:hover{
+            color: #FF6537;
+        }
+        .ye{
+            height: 400px;
+            width: 200px;
+            background: black;
+            position: absolute;
+            top: 50px;
+            z-index: 5;
+            opacity: 0.9;
+
+        }
+        .shi{
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+
+        }
+        .b{
+            width: 200px;
+            height: 30px;
+            margin-top: 10px;
+        }
+        .shi1{
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+
+        }
+        .shi2{
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+
+        }
+        .shi3{
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+
+        }
+        .shi4{
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+
+        }
+        .shi5{
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+
+        }
+        .shi6{
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+
+        }
+        .shi7{
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+
+        }
+        .shi8{
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+
+        }
+
+        .lou{
+            width: 50px;
+            height: 500px;
+            border: 1px solid #ccc;
+            position: fixed;
+            top: 50px;;
+            right: 50px;
+            background: gold;
+            opacity: 0;
+            transition: all 2s;
+        }
+    </style>
+
+
+
+</head>
+
+    <div class="count">
+        <div class="tou">
+            <div class="imte1">
+                <a style="font-size: 10px">所在城市：</a>
+
+            </div>
+            <div class="img1"style=" margin-top: 5px;">
+                北京
+                <img src="网页用图/1.png" style="height: 12px;width: 12px">
+            </div>
+            <div class="imte2">
+                <a >您好，</a>
+                <a style="color: red">1778899</a>
+                <a>退出 |</a>
+                <a>|我的订单</a>
+                <a>|我的消息</a>
+                <a>|我是商家</a>
+                <a>|400-800-8820</a>
+            </div>
+
+        </div>
+        <div class="heard">
+            <div class="center">
+                <div class="center-1">
+                    <input id="test" value="" placeholder="请输入商家名称或者关键字进行筛选"style="height: 25px;width: 400px;border: 1px solid blue;"/>
+                </div>
+                <div class="center-2">
+                    <a href="" style="color: white">商家</a>
+                </div>
+                <div class="center-3"><a href="">商品</a></div>
+                <div class="center-4">
+                    <img src="网页用图/2.png" style="height: 25px;width: 25px;">
+                </div>
+                <div class="center-5"><a href="">热门：</a></div>
+                <div class="center-6"><a href="">酒店</a></div>
+                <div class="center-7"><a href="">洗车</a></div>
+                <div class="center-8"><a href="">餐饮</a></div>
+                <div class="center-9"><a href="">进口</a></div>
+                <div class="center-10"><a href="">旅游</a></div>
+                <div class="center-11"><a href="">如家</a></div>
+
+                <div class="center-12">
+                    <div class="center-12-1">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                        <a href="">我的易和</a>
+                    </div>
+                </div>
+
+                <div class="center-13">
+                    <div class="center-13-1">
+                        <img src="网页用图/cart.png" style="width: 15px;height: 15px">
+                        <a href="">购物车</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="left">
+                <div class="img2-1">
+                    <img src="网页用图/底部易和图标.png" style="height: 60px;width: 80px">
+                </div>
+            </div>
+            <div class="right"></div>
+        </div>
+
+        <div class="hang">
+
+            <div class="hang-1">
+                    <a>行业分类</a>
+                    <div class="ye"style="display: none">
+                        <div class="ye-1 b">
+                            <div style="color: white;text-align: center">服装市场</div>
+                        <div class="shi"style="display: none">
+                            <img src="网页用图/tao.png" style="height: 400px;width: 400px;opacity: 1">
+                        </div>
+                        </div>
+
+                        <div class="ye-2 b">
+                            <div style="color: white;text-align: center">建材市场</div>
+                            <div class="shi1"style="display: none">
+                                <img src="网页用图/p1.png" style="height: 400px;width: 400px;opacity: 1">
+                            </div>
+                        </div>
+
+                        <div class="ye-3 b">
+                            <div style="color: white;text-align: center">休闲娱乐</div>
+                            <div class="shi2"style="display: none">
+                                <img src="网页用图/p1.png" style="height: 400px;width: 400px;opacity: 1">
+                            </div>
+                        </div>
+
+                        <div class="ye-4 b">
+                            <div style="color: white;text-align: center">生活服务</div>
+                            <div class="shi3"style="display: none">
+                                <img src="网页用图/tao.png" style="height: 400px;width: 400px;opacity: 1">
+                            </div>
+                        </div>
+
+                        <div class="ye-5 b">
+                            <div style="color: white;text-align: center">BC市场</div>
+                            <div class="shi4"style="display: none">
+                                <img src="网页用图/p1.png" style="height: 400px;width: 400px;opacity: 1">
+                            </div>
+                        </div>
+
+                        <div class="ye-6 b">
+                            <div style="color: white;text-align: center">丽人</div>
+                            <div class="shi5"style="display: none">
+                                <img src="网页用图/tao.png" style="height: 400px;width: 400px;opacity: 1">
+                            </div>
+                        </div>
+
+                        <div class="ye-7 b">
+                            <div style="color: white;text-align: center">本地生活</div>
+                            <div class="shi6"style="display: none">
+                                <img src="网页用图/tao.png" style="height: 400px;width: 400px;opacity: 1">
+                            </div>
+                        </div>
+
+                        <div class="ye-8 b">
+                            <div style="color: white;text-align: center">购物</div>
+                            <div class="shi7"style="display: none">
+                                <img src="网页用图/p1.png" style="height: 400px;width: 400px;opacity: 1">
+                            </div>
+                        </div>
+                        <div class="ye-9 b">
+                            <div style="color: white;text-align: center">电子数码</div>
+                            <div class="shi8"style="display: none">
+                                <img src="网页用图/p1.png" style="height: 400px;width: 400px;opacity: 1">
+                            </div>
+                        </div>
+                </div>
+
+
+            </div>
+            <div class="hang-2"><a href="">首页</a></div>
+            <div class="hang-2"><a href="">精选品牌</a></div>
+            <div class="hang-2"><a href="">今日特价</a></div>
+            <div class="hang-2"><a href="">积分商城</a></div>
+            <div class="hang-2"><a href="">加入易和</a></div>
+            <div class="hang-2"><a href="">在线客服</a></div>
+
+
+        </div>
+
+
+
+
+
+            <div class="outer">
+                <div class="contain" style="left: -1630px;transition: all 1s">
+                    <div class="imgeBack imge" style="left: 0">
+                        <img src="网页用图/2.2.jpg" style="width: 1630px;height: 470px">
+                    </div>
+                    <div class="imge1 imge" style="left:1630px">
+                        <img src="网页用图/大图.png" style="width: 1630px;height: 470px">
+                    </div>
+                    <div class="imge2 imge"style="left: 3260px">
+                        <img src="网页用图/2.1.jpg" style="width: 1630px;height: 470px">
+                    </div>
+                    <div class="imge3 imge"style="left: 4890px">
+                        <img src="网页用图/2.2.jpg" style="width: 1630px;height: 470px">
+                    </div>
+                    <div class="imgeFist imge"style="left:6520px" >
+                        <img src="网页用图/大图.png" style="width: 1630px;height: 470px">
+                    </div>
+
+                </div>
+                <div class="lefts">
+                    <img src="网页用图/back.png" style="width: 30px;height: 40px">
+                </div>
+                <div class="rights">
+                    <img src="网页用图/more.png" style="width: 30px;height: 40px">
+                </div>
+                <div class="lists" >
+                    <div class="list" style="background: #F40">
+
+                    </div>
+                    <div class="list"style="margin:0 5px">
+
+                    </div>
+                    <div class="list">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+        <div class="dang">
+                <div  class="dang-1">
+                    <div class="png">
+                        <img src="网页用图/当红-3.png" style="width: 300px;height: 180px">
+                    </div>
+                    <div class="png"><img src="网页用图/复古风.png" style="width: 300px;height: 180px">
+                    </div>
+                    <div class="png">
+                        <img src="网页用图/男装馆1.png" style="width: 300px;height: 180px">
+                    </div>
+                    <div class="png">
+                        <img src="网页用图/美妆馆.png" style="width: 300px;height: 180px">
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="jing">
+
+                <div class="jing-1"><h1>精选</h1></div>
+                <div class="jing-2"><h1>品牌</h1></div>
+                <div class="jing-3">Brand</div>
+                <div class="jing-4">selection </div>
+
+
+
+        </div>
+
+        <div class="jingxuan">
+            <div class="jingxuan-1" >
+                <div class="jingxuan-1-1 img">
+                    <img src="网页用图/3.png" style="height: 300px;width: 350px">
+                </div>
+
+                <div class="jingxuan-2">
+                    <div class="jingxuan2-1 item">
+                        <img src="网页用图/未标题-1.png" style="width: 222px;height: 95px">
+                    </div>
+                    <div class="jingxuan2-2 item">
+                        <img src="网页用图/6.png" style="width: 222px;height: 95px">
+                    </div>
+                    <div class="jingxuan2-3 item">
+                        <img src="网页用图/4.png" style="width: 222px;height: 95px">
+                    </div>
+                    <div class="jingxuan2-4 item">
+                        <img src="网页用图/6.png" style="width: 222px;height: 95px">
+                    </div>
+
+                    <div class="jingxuan2-5 item">
+                        <img src="网页用图/7.png" style="width: 222px;height: 95px">
+                    </div>
+                    <div class="jingxuan2-6 item">
+                        <img src="网页用图/8.png" style="width: 222px;height: 95px">
+                    </div>
+                    <div class="jingxuan2-7 item">
+                        <img src="网页用图/9.png" style="width: 222px;height: 95px">
+                    </div>
+                    <div class="jingxuan2-8 item">
+                        <img src="网页用图/10.png" style="width: 222px;height: 95px">
+                    </div>
+
+                    <div class="jingxuan2-9 item">
+                        <img src="网页用图/11.png" style="width: 222px;height: 95px">
+                    </div>
+                    <div class="jingxuan2-10 item">
+                        <img src="网页用图/12.png" style="width: 222px;height: 95px">
+                    </div>
+                    <div class="jingxuan2-11 item">
+                        <img src="网页用图/13.png" style="width: 222px;height: 95px">
+                    </div>
+                    <div class="jingxuan2-12 item">
+                        <img src="网页用图/5.png" style="width: 222px;height: 95px">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="qiche">
+
+            <div class="qiche-1">
+                <img src="网页用图/车.png" style="width: 25px;height: 25px">
+
+            </div>
+            <div class="qiche-2"> <a href="">汽车装饰</a> </div>
+            <div class="qiche-3">
+                <div>
+                    <a href="">爆款推荐</a>
+                </div>
+                <div>
+                    <a href="">精品女装</a>
+                </div>
+                <div>
+                    <a href="">精品男装</a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="che">
+            <div class="che-1" >
+                <div class="che-1-1" >
+                    <img src="网页用图/c1.jpg" style="height: 520px;width: 320px">
+
+                </div>
+
+                <div  class="che-1-2">
+                    <div>
+                    <img src="网页用图/c2.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            同城汽车装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/c3.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            同城汽车装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/c4.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            同城汽车装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/c5.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            同城汽车装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/c6.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            同城汽车装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/c7.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            同城汽车装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="jituan">
+            <img src="网页用图/footer3.jpg" style="width: 100%;height: 130px">
+        </div>
+
+
+
+
+
+        <div class="qiche">
+
+            <div class="qiche-1">
+                <img src="网页用图/车.png" style="width: 25px;height: 25px">
+
+            </div>
+            <div class="qiche-2"> <a href="">精品酒店</a> </div>
+            <div class="qiche-3">
+                <div>
+                    <a href="">爆款推荐</a>
+                </div>
+                <div>
+                    <a href="">精品女装</a>
+                </div>
+                <div>
+                    <a href="">精品男装</a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="che">
+            <div class="che-1" >
+                <div class="che-1-1" >
+                    <img src="网页用图/p1.jpg" style="height: 520px;width: 320px">
+
+                </div>
+
+                <div  class="che-1-2">
+                    <div>
+                        <img src="网页用图/p2.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            三亚亚龙湾丽斯卡尔顿酒店
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/6-1.png" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            三亚亚龙湾丽斯卡尔顿酒店
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/p4.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            三亚亚龙湾丽斯卡尔顿酒店
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/p5.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            三亚亚龙湾丽斯卡尔顿酒店
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/p6.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            三亚亚龙湾丽斯卡尔顿酒店
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/p7.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            三亚亚龙湾丽斯卡尔顿酒店
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="jituan">
+            <img src="网页用图/未标题-3.png" style="width: 100%;height: 130px">
+        </div>
+
+
+
+
+        <div class="qiche">
+
+            <div class="qiche-1">
+                <img src="网页用图/ju.png" style="width: 25px;height: 25px">
+
+            </div>
+            <div class="qiche-2"> <a href="">男装</a> </div>
+            <div class="qiche-3">
+                <div>
+                    <a href="">爆款推荐</a>
+                </div>
+                <div>
+                    <a href="">精品女装</a>
+                </div>
+                <div>
+                    <a href="">精品男装</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="che">
+            <div class="che-1" >
+                <div class="che-1-1" >
+                    <img src="网页用图/n1.jpg" style="height: 520px;width: 320px">
+
+                </div>
+
+                <div  class="che-1-2">
+                    <div>
+                        <img src="网页用图/n2.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            法曼斯fomoce男装
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/n3.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            法曼斯fomoce男装
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/n4.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            法曼斯fomoce男装
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/n5.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            法曼斯fomoce男装
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/n6.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            法曼斯fomoce男装
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/n7.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            法曼斯fomoce男装
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="jituan">
+            <img src="网页用图/footer1.jpg" style="width: 100%;height: 130px">
+        </div>
+
+
+
+
+        <div class="qiche">
+
+            <div class="qiche-1">
+                <img src="网页用图/家居建材.png" style="width: 25px;height: 25px">
+
+            </div>
+            <div class="qiche-2"> <a href="">建材</a> </div>
+            <div class="qiche-3">
+                <div>
+                    <a href="">爆款推荐</a>
+                </div>
+                <div>
+                    <a href="">精品女装</a>
+                </div>
+                <div>
+                    <a href="">精品男装</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="che ">
+            <div class="che-1" >
+                <div class="che-1-1" >
+                    <img src="网页用图/j1.jpg" style="height: 520px;width: 320px">
+
+                </div>
+
+                <div  class="che-1-2">
+                    <div>
+                        <img src="网页用图/j2.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                           建筑家居饰装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/j3.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            建筑家居饰装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/j4.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            建筑家居饰装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/j5.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            建筑家居饰装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/j6.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            建筑家居饰装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+
+                </div>
+                <div  class="che-1-2">
+
+                    <div>
+                        <img src="网页用图/j7.jpg" style="width: 305px;height: 140px">
+                        <div class="zi">
+                            建筑家居饰装饰中心
+                        </div>
+                    </div>
+                    <div class="lianxi" >
+
+                        <a>李杰</a></br>
+                        <a>18862352241</a></br>
+                        <a>浙江省台州市温岭市人民路168号</a></br>
+                    </div>
+                    <div class="lianxi-1">
+                        <img src="网页用图/二维码2手机.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-2">
+                        <img src="网页用图/ju.png" style="width: 15px;height: 15px">
+                    </div>
+                    <div class="lianxi-3">
+                        <img src="网页用图/定位.png" style="width: 15px;height: 15px">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="jituan">
+            <img src="网页用图/footer.jpg" style="width: 100%;height: 130px">
+        </div>
+
+
+
+        <div class="zheng">
+            <div class="im">
+                <img src="网页用图/botton.png">
+                <span>正品保证</span>
+            </div>
+            <div class="im">
+                <img src="网页用图/botton1.png">
+                <span>全程追踪</span>
+            </div>
+            <div class="im">
+                <img src="网页用图/botton2.png">
+                <span>客户监督</span>
+            </div>
+            <div class="im">
+                <img src="网页用图/botton3.png">
+                <span>售后无忧</span>
+            </div>
+            <div class="im">
+                <img src="网页用图/botton4.png">
+                <span>准时送达</span>
+            </div>
+        </div>
+
+
+
+        <div class="bottom">
+                <div class="bot">
+                    <div class="bottom1" >
+                        <img src="网页用图/底部易和图标.png" style="height: 100px;width: 200px">
+                    </div>
+                    <div class="bottom1">
+                        <img src="网页用图/二维码1.png" style="height: 100px;width: 100px"></br>
+                        <img src="网页用图/二维码1微信.png">
+                        <a>官方微信</a>
+                    </div>
+                    <div class="bottom1">
+                        <img src="网页用图/二维码1.png" style="height: 100px;width: 100px"></br>
+                        <img src="网页用图/二维码2手机.png">
+                        <a>APP下载</a>
+                    </div>
+                    <div class="bottom1">
+                        <a>关于易和</a></br>
+                        <a>新用户注册</a></br>
+                        <a>在线下单</a></br>
+                        <a>支付方式</a>
+                    </div>
+                    <div class="bottom1">
+                        <a>配送说明</a></br>
+                        <a>运费说明</a></br>
+                        <a>配送方式</a></br>
+                        <a>发票说明</a>
+                    </div>
+                    <div class="bottom1">
+                        <a>售后服务</a></br>
+                        <a>退换货规则</a></br>
+                        <a>服务保障承诺</a></br>
+                        <a>验货与签收</a>
+                    </div>
+                    <div class="bottom1">
+                        <a>加盟易和</a></br>
+                        <a>加盟条款</a></br>
+                        <a>公司简介</a></br>
+                        <a>服务协议</a>
+                    </div>
+
+                </div>
+                <div class="bot2">
+                    <a href="">易和生活</a>
+                </div>
+                <div class="bot2">
+                    <a href="">纵想品质</a>
+                </div>
+        </div>
+        <div class="lou"></div>
+    </div>
+</body>
+<script>
+
+    var items=document.getElementsByClassName("imge");
+    var contain=document.getElementsByClassName("contain")[0];
+    var outerDiv=document.getElementsByClassName("outer")[0];
+    var listDiv=document.getElementsByClassName("list");
+
+
+    var left=document.getElementsByClassName("lefts")[0];
+    var right=document.getElementsByClassName("rights")[0];
+
+    var hang1=document.getElementsByClassName("hang-1")[0];
+    var ye=document.getElementsByClassName("ye")[0];
+
+    hang1.onmouseover=function(){
+        hang1.style.background="#FF1B0E";
+        ye.style.display="block";
+    }
+    hang1.onmouseout=function () {
+        ye.style.display="none";
+        hang1.style.background="deepskyblue";
+    }
+
+
+    var ye1=document.getElementsByClassName("ye-1")[0];
+    var shi=document.getElementsByClassName("shi")[0];
+
+    ye1.onmouseover=function () {
+       ye1.style.background="#FF6537" ;
+        shi.style.display="block";
+    }
+    ye1.onmouseout=function () {
+        shi.style.display="none";
+        ye1.style.background="black";
+    }
+
+
+    var ye2=document.getElementsByClassName("ye-2")[0];
+    var shi1=document.getElementsByClassName("shi1")[0];
+
+    ye2.onmouseover=function () {
+        ye2.style.background="#FF6537" ;
+        shi1.style.display="block";
+    }
+    ye2.onmouseout=function () {
+        shi1.style.display="none";
+        ye2.style.background="black";
+    }
+
+    var ye3=document.getElementsByClassName("ye-3")[0];
+    var shi2=document.getElementsByClassName("shi2")[0];
+
+    ye3.onmouseover=function () {
+        ye3.style.background="#FF6537" ;
+        shi2.style.display="block";
+    }
+    ye3.onmouseout=function () {
+        shi2.style.display="none";
+        ye3.style.background="black";
+    }
+
+    var ye4=document.getElementsByClassName("ye-4")[0];
+    var shi3=document.getElementsByClassName("shi3")[0];
+
+    ye4.onmouseover=function () {
+        ye4.style.background="#FF6537" ;
+        shi3.style.display="block";
+    }
+    ye4.onmouseout=function () {
+        shi3.style.display="none";
+        ye4.style.background="black";
+    }
+
+    var ye5=document.getElementsByClassName("ye-5")[0];
+    var shi4=document.getElementsByClassName("shi4")[0];
+
+    ye5.onmouseover=function () {
+        ye5.style.background="#FF6537" ;
+        shi4.style.display="block";
+    }
+    ye5.onmouseout=function () {
+        shi4.style.display="none";
+        ye5.style.background="black";
+    }
+
+
+    var ye6=document.getElementsByClassName("ye-6")[0];
+    var shi5=document.getElementsByClassName("shi5")[0];
+
+    ye6.onmouseover=function () {
+        ye6.style.background="#FF6537" ;
+        shi5.style.display="block";
+    }
+    ye6.onmouseout=function () {
+        shi5.style.display="none";
+        ye6.style.background="black";
+    }
+
+    var ye7=document.getElementsByClassName("ye-7")[0];
+    var shi6=document.getElementsByClassName("shi6")[0];
+
+    ye7.onmouseover=function () {
+        ye7.style.background="#FF6537" ;
+        shi6.style.display="block";
+    }
+    ye7.onmouseout=function () {
+        shi6.style.display="none";
+        ye7.style.background="black";
+    }
+    var ye8=document.getElementsByClassName("ye-8")[0];
+    var shi7=document.getElementsByClassName("shi7")[0];
+
+    ye8.onmouseover=function () {
+        ye8.style.background="#FF6537" ;
+        shi7.style.display="block";
+    }
+    ye8.onmouseout=function () {
+        shi7.style.display="none";
+        ye8.style.background="black";
+    }
+
+    var ye9=document.getElementsByClassName("ye-9")[0];
+    var shi8=document.getElementsByClassName("shi8")[0];
+    ye9.onmouseover=function () {
+        ye9.style.background="#FF6537" ;
+        shi8.style.display="block";
+    }
+    ye9.onmouseout=function () {
+        shi8.style.display="none";
+        ye9.style.background="black";
+    }
+
+
+
+
+    right.onclick=function () {
+
+        var left = contain.style.left;
+        left = left.substring(left.length - 2, -1);
+
+        if (left == -6520) {
+            contain.style.transition = "";
+            contain.style.left = "-1630px";
+            setTimeout(function () {
+                contain.style.transition = "all 1s";
+                contain.style.left = "-3260px";
+            }, 50);
+
+        } else {
+            contain.style.left = left - 1630 + "px";
+        }
+
+        num1++;
+        if(num1==listDiv.length){
+            num1=0;
+        }
+        for(var i=0;i<listDiv.length;i++){
+            listDiv[i].style.background="#B7B7B7";
+        }
+        console.log(num1);
+
+        listDiv[num1].style.background="#F40";
+
+    }
+
+    left.onclick=function () {
+
+        var left = contain.style.left;
+        left = left.substring(left.length - 2, -1);
+
+        if (left == 0) {
+            contain.style.transition = "";
+            contain.style.left = "-4890px";
+            setTimeout(function () {
+                contain.style.transition = "all 1s";
+                contain.style.left = "-3260px";
+            }, 50);
+
+        } else {
+            contain.style.left = +left + 1630 + "px";
+        }
+
+        num1++;
+        if(num1==listDiv.length){
+            num1=0;
+        }
+        for(var i=0;i<listDiv.length;i++){
+            listDiv[i].style.background="#B7B7B7";
+        }
+        console.log(num1);
+
+        listDiv[num1].style.background="#F40";
+
+    }
+
+
+
+
+    var num1=0;
+
+    function moveImg() {
+
+        var left = contain.style.left;
+        left = left.substring(left.length - 2, -1);
+
+        if (left == -6520) {
+            contain.style.transition = "";
+            contain.style.left = "-1630px";
+            setTimeout(function () {
+                contain.style.transition = "all 1s";
+                contain.style.left = "-3260px";
+            }, 50);
+
+        } else {
+            contain.style.left = left - 1630 + "px";
+        }
+
+
+
+
+
+
+
+
+
+        num1++;
+        if(num1==listDiv.length){
+            num1=0;
+        }
+        for(var i=0;i<listDiv.length;i++){
+            listDiv[i].style.background="#B7B7B7";
+        }
+        console.log(num1);
+
+        listDiv[num1].style.background="#F40";
+
+    }
+
+
+    var num=setInterval(moveImg,2000);
+
+
+
+
+    function clearTime() {
+        clearInterval(num);
+    }
+
+
+    outerDiv.onmouseover=function () {
+        console.log("hehe");
+        clearTime();
+    }
+    outerDiv.onmouseout=function () {
+        console.log("hhh");
+        num=setInterval(moveImg,2000)
+    }
+
+
+
+    var lou=document.getElementsByClassName("lou")[0];
+    document.addEventListener("mousewheel",function () {
+
+        if(document.body.scrollTop>3900){
+            document.body.scrollTop=0;
+        }else if(document.body.scrollTop>800){
+            lou.style.opacity=1;
+        }
+        else{
+            lou.style.opacity=0;
+        }
+
+        console.log(document.body.scrollTop);
+    })
+</script>
+</html>
